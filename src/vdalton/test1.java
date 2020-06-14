@@ -272,7 +272,6 @@ public class test1 extends javax.swing.JFrame {
         setTitle("VDalton Beta 1.0");
         setUndecorated(true);
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         scroll.setBackground(new java.awt.Color(54, 52, 52));
         scroll.setBorder(null);
@@ -518,10 +517,7 @@ public class test1 extends javax.swing.JFrame {
 
         scroll.setViewportView(jPanel1);
 
-        getContentPane().add(scroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 630, 390));
-
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Test1/titulo_queves.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, -1));
 
         regresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Test1/boton_atras.png"))); // NOI18N
         regresar.setBorder(null);
@@ -535,10 +531,8 @@ public class test1 extends javax.swing.JFrame {
                 regresarMousePressed(evt);
             }
         });
-        getContentPane().add(regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, -1, 40));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Test1/titulo_instrucciones.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, -1));
 
         exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Test1/boton_cerrar.png"))); // NOI18N
         exit.setBorder(null);
@@ -551,7 +545,6 @@ public class test1 extends javax.swing.JFrame {
                 exitMousePressed(evt);
             }
         });
-        getContentPane().add(exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, -1, 50));
 
         minimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Test1/boton_minimize.png"))); // NOI18N
         minimizar.setBorder(null);
@@ -563,10 +556,51 @@ public class test1 extends javax.swing.JFrame {
                 minimizarMousePressed(evt);
             }
         });
-        getContentPane().add(minimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 0, -1, 50));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Test1/fondo_sinbotones.png"))); // NOI18N
-        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 600));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jLabel7))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 630, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(740, 740, 740)
+                .addComponent(exit))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jLabel5))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(regresar))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(700, 700, 700)
+                .addComponent(minimizar))
+            .addComponent(fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 790, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(jLabel7))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(scroll, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(jLabel5))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(minimizar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(fondo)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
