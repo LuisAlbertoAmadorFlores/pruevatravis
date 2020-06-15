@@ -40,6 +40,7 @@ public  class Resultado extends javax.swing.JFrame {
         user.setText(vd.usuario);
         setIconImage(vd.imageicon.getImage());
         instanciatray();
+        
     }
 
     public void instanciatray() {
@@ -52,7 +53,7 @@ public  class Resultado extends javax.swing.JFrame {
         systemtray.add(trayicon);
         this.setVisible(false);
         DesktopNotify.setDefaultTheme(NotifyTheme.Dark);
-        DesktopNotify.showDesktopMessage("VDalton Activo", "Los servicios se encuetran activos,puedes volver desde el apartado de Notificaciones.", DesktopNotify.TIP, 9000L);
+        DesktopNotify.showDesktopMessage("VDalton Activo","Los servicios se encuetran activos,puedes volver desde el apartado de Notificaciones.", DesktopNotify.TIP, 9000L);
     }
 
     public void crearuta() {
