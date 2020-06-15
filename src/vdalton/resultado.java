@@ -22,7 +22,7 @@ import java.util.logging.Logger;
  *
  * @author Beto
  */
-public final class Resultado extends javax.swing.JFrame {
+public  class Resultado extends javax.swing.JFrame {
 
     String Test;
     private TrayIcon trayicon;

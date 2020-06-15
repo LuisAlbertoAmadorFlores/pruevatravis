@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  *
  * @author Beto
  */
-public final class Bienvenida extends javax.swing.JFrame  implements Runnable{
+public class Bienvenida extends javax.swing.JFrame  implements Runnable{
     Inicio nv = new Inicio();
     private Thread tiempo;
 
