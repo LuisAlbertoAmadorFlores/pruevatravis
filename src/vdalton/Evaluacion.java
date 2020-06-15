@@ -22,7 +22,7 @@ import java.util.logging.Logger;
  *
  * @author Beto
  */
-public class Resultado extends javax.swing.JFrame {
+public class Evaluacion extends javax.swing.JFrame {
 
     String Test;
     private TrayIcon trayicon;
@@ -34,7 +34,7 @@ public class Resultado extends javax.swing.JFrame {
     /**
      * Creates new form resultado
      */
-    public Resultado() {
+    public Evaluacion() {
         initComponents();
         setLocationRelativeTo(null);
         user.setText(vd.usuario);
@@ -337,7 +337,7 @@ public class Resultado extends javax.swing.JFrame {
         } catch (AWTException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage());
         } catch (IOException ex) {
-            Logger.getLogger(Resultado.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Evaluacion.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_ocultarActionPerformed
 
@@ -388,14 +388,16 @@ public class Resultado extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Resultado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Evaluacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Resultado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Evaluacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Resultado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Evaluacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Resultado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Evaluacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -403,7 +405,7 @@ public class Resultado extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Resultado().setVisible(true);
+                new Evaluacion().setVisible(true);
             }
         });
     }
